@@ -14,6 +14,6 @@ export class ClampService {
 
     const slope = (maxFontSize - minFontSize) / (maxWidth - minWidth);
     const yAxisIntersection = -minWidth * slope + minFontSize
-    return  `font-size: clamp(${ minFontSize }rem, ${ yAxisIntersection.toFixed(4) }rem + ${ (slope * 100).toFixed(4) }vw, ${ maxFontSize }rem);`
+    return  `clamp(${ minFontSize }rem, ${ yAxisIntersection.toFixed(4) }rem + ${ (slope * 100).toFixed(4) }vw, ${ maxFontSize }rem);`
   }
 }
