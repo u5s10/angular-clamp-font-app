@@ -1,0 +1,42 @@
+
+.container {
+  display: grid;
+  height: 80vh;
+  place-items: center;
+  padding: 1rem;
+  .flex {
+    min-width: 150px;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    .full-width {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1rem;
+      min-width: 150px;
+      max-width: 350px;
+      width: 100%;
+    }
+    .copy {
+      text-align: center;
+      background-color: #c2185b;
+      color: white;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.2;
+      padding: 1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      transition: transform 300ms ease-in-out;
+      backface-visibility: hidden;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05) translateZ(0);
+      }
+    }
+  }
+}
